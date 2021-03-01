@@ -1,5 +1,5 @@
 /*
-THEME: Small Apps | Bootstrap App Landing Template
+THEME: Suppliers By ALBA | Alba Cars LLC
 VERSION: 1.0.0
 AUTHOR: Themefisher
 
@@ -14,14 +14,75 @@ TWITTER: https://twitter.com/themefisher
 FACEBOOK: https://www.facebook.com/themefisher
 */
 /*=== MEDIA QUERY ===*/
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800");
+/* @import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800"); */
+
+@font-face {
+  font-family: "Visby CF";
+  src: url("../../source/font/VisbyCF-Bold.eot") format("eot"),
+       url("../../source/font/VisbyCF-Bold.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-Bold.woff") format("woff"),
+       url("../../source/font/VisbyCF-Bold.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-BoldOblique.eot") format("eot"),
+       url("../../source/font/VisbyCF-BoldOblique.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-BoldOblique.woff") format("woff"),
+       url("../../source/font/VisbyCF-BoldOblique.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-DemiBold.eot") format("eot"),
+       url("../../source/font/VisbyCF-DemiBold.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-DemiBold.woff") format("woff"),
+       url("../../source/font/VisbyCF-DemiBold.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-DemiBoldOblique.eot") format("eot"),
+       url("../../source/font/VisbyCF-DemiBoldOblique.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-DemiBoldOblique.woff") format("woff"),
+       url("../../source/font/VisbyCF-DemiBoldOblique.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-ExtraBold.eot") format("eot"),
+       url("../../source/font/VisbyCF-ExtraBold.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-ExtraBold.woff") format("woff"),
+       url("../../source/font/VisbyCF-ExtraBold.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-ExtraBoldOblique.eot") format("eot"),
+       url("../../source/font/VisbyCF-ExtraBoldOblique.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-ExtraBoldOblique.woff") format("woff"),
+       url("../../source/font/VisbyCF-ExtraBoldOblique.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-Heavy.eot") format("eot"),
+       url("../../source/font/VisbyCF-Heavy.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-Heavy.woff") format("woff"),
+       url("../../source/font/VisbyCF-Heavy.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-HeavyOblique.eot") format("eot"),
+       url("../../source/font/VisbyCF-HeavyOblique.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-HeavyOblique.woff") format("woff"),
+       url("../../source/font/VisbyCF-HeavyOblique.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-Light.eot") format("eot"),
+       url("../../source/font/VisbyCF-Light.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-Light.woff") format("woff"),
+       url("../../source/font/VisbyCF-Light.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-LightOblique.eot") format("eot"),
+       url("../../source/font/VisbyCF-LightOblique.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-LightOblique.woff") format("woff"),
+       url("../../source/font/VisbyCF-LightOblique.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-Medium.eot") format("eot"),
+       url("../../source/font/VisbyCF-Medium.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-Medium.woff") format("woff"),
+       url("../../source/font/VisbyCF-Medium.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-MediumOblique.eot") format("eot"),
+       url("../../source/font/VisbyCF-MediumOblique.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-MediumOblique.woff") format("woff"),
+       url("../../source/font/VisbyCF-MediumOblique.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-Thin.eot") format("eot"),
+       url("../../source/font/VisbyCF-Thin.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-Thin.woff") format("woff"),
+       url("../../source/font/VisbyCF-Thin.woff2") format("woff2"),
+       url("../../source/font/VisbyCF-ThinOblique.eot") format("eot"),
+       url("../../source/font/VisbyCF-ThinOblique.ttf") format("ttf"),
+       url("../../source/font/VisbyCF-ThinOblique.woff") format("woff"),
+       url("../../source/font/VisbyCF-ThinOblique.woff2") format("woff2"),
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Visby CF", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Visby CF", sans-serif;
   color: #000;
   font-weight: 300;
 }
@@ -150,12 +211,20 @@ a:hover {
   text-decoration: none;
 }
 
+.main-logo {
+  height: 160px;
+}
+
+.logo-footer {
+  height: 160px;
+}
+
 .bg-gray {
   background: #fafafa;
 }
 
 .bg-blue {
-  background: #2e7eed;
+  background: #FF3448;
 }
 
 .bg-1 {
@@ -356,7 +425,7 @@ button:focus,
 .btn-main-md {
   padding: 17px 38px;
   border-radius: 3px;
-  background: #2e7eed;
+  background: #FF3448;
   color: #fff;
   outline: none;
 }
@@ -401,26 +470,27 @@ button:focus,
 }
 
 .main-nav {
-  background: #fff;
+  background: #FF3448;
   z-index: 1;
 }
 
 .main-nav .navbar-brand {
   padding: 0;
+  height: 42px;
 }
 
 .main-nav .navbar-nav .nav-item {
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Visby CF", sans-serif;
 }
 
 .main-nav .navbar-nav .nav-item .nav-link {
   position: relative;
   text-align: center;
-  font-size: 13px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #000;
+  color: #4c4646;
   padding-left: 20px;
   padding-right: 20px;
   line-height: 45px;
@@ -437,12 +507,12 @@ button:focus,
 }
 
 .main-nav .navbar-nav .nav-item.active .nav-link {
-  color: #2e7eed;
+  color: #fff;
 }
 
 .main-nav .navbar-nav .nav-item.active .nav-link:before {
   content: '';
-  background: #2e7eed;
+  background: #FF3448;
   width: 60%;
   height: 2px;
   position: absolute;
@@ -511,7 +581,7 @@ button:focus,
 
 .main-nav .dropdown .dropdown-menu .dropdown-item.active, .main-nav .dropdown .dropdown-menu .dropdown-item.focus, .main-nav .dropdown .dropdown-menu .dropdown-item:focus, .main-nav .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
-  color: #2e7eed;
+  color: #FF3448;
 }
 
 .main-nav .dropdown .dropdown-menu li:first-child {
@@ -688,7 +758,7 @@ button:focus,
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: #2e7eed;
+  background: #FF3448;
   color: #fff;
   transition: 0.3s;
   z-index: 999556;
@@ -977,7 +1047,7 @@ button:focus,
 
 .service .service-box .service-item i {
   font-size: 20px;
-  color: #2e7eed;
+  color: #FF3448;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -1094,7 +1164,7 @@ button:focus,
 .video-promo .content-block a i.video {
   height: 125px;
   width: 125px;
-  background: #2e7eed;
+  background: #FF3448;
   display: inline-block;
   font-size: 40px;
   color: #fff;
@@ -1175,7 +1245,9 @@ button:focus,
   width: 200%;
   height: 200%;
   border-radius: 50%;
-  background-image: linear-gradient(45deg, #009EC5 0%, #2e7eed 20%, #02225B 50%);
+  background-image: linear-gradient(
+    45deg
+    , #020024 0%, #0e0e1b 35%, #022930 100%);
 }
 
 .pull-top {
