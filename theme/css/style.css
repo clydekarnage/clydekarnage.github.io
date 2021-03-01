@@ -360,6 +360,15 @@ textarea.form-control.main {
     margin-left: 0;
     margin-bottom: 30px;
   }
+
+  .mt-5 {
+    text-align: center;
+  }
+
+  .footer-main .block {
+    text-align: center;
+  }
+
 }
 
 .right {
