@@ -226,6 +226,11 @@ a:hover {
   text-decoration: none;
 }
 
+.icons-sec {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-logo {
   height: 213px;
 }
@@ -1092,7 +1097,7 @@ button:focus,
 }
 
 .service .service-box .service-item i {
-  font-size: 40px;
+  font-size: 26px;
   color: #FF3448;
   display: inline-block;
   margin-bottom: 10px;
