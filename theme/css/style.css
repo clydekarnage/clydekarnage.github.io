@@ -280,6 +280,8 @@ a:hover {
 @media (max-width: 480px) {
   .section-title p {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -523,7 +525,7 @@ button:focus,
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #4c4646;
+  color: #fff;
   padding-left: 20px;
   padding-right: 20px;
   line-height: 45px;
@@ -563,7 +565,7 @@ button:focus,
 
 .main-nav .navbar-nav .nav-item.active .nav-link:before {
   content: '';
-  background: #FF3448;
+  background: #fff;
   width: 60%;
   height: 2px;
   position: absolute;
@@ -1295,7 +1297,7 @@ button:focus,
           transform: translateX(-50%);
   width: 200%;
   height: 200%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background-image: linear-gradient(
     45deg
     , #020024 0%, #0e0e1b 35%, #022930 100%);
