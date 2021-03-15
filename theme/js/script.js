@@ -152,6 +152,8 @@
       ]
     });
 
+    $('#clear-form')[0].reset();
+
 
     // scroll
     // $('.scrollTo').on('click', function (e) {

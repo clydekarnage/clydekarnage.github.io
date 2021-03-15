@@ -35,6 +35,10 @@
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+
 
 
 <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
@@ -111,7 +115,38 @@
 			<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
 				<h1 class="text-white font-weight-bold mb-4">Suppliers by Alba</h1>
 				<p class="text-white mb-5">The Service Provider App is a portal for service providers to submit their bids and compete for the posted smart tenders. Tenders are generated via the Customer and the Dealers App.</p>
-				<a href="#" class="btn btn-main-md">Download Now</a>
+				<!-- <a href="#" class="btn btn-main-md" >Download Now</a> -->
+
+
+				<button type="button" class="btn btn-main-md" data-toggle="modal" data-target="#exampleModalCenter">
+					Download Now
+				  </button>
+				  
+				  <!-- Modal -->
+				  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLongTitle">Please Fill Up Your Details</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<form id="clear-form" class="form-inline d-flex">
+								<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputName" placeholder="Enter Full Name..." required>
+								<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." required>
+								<input type="tel" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMobile" placeholder="+971 50 000 0000" required>
+								<button type="submit" class="btn btn-primary mx-auto" style="background-color: #FF3448;
+								border-color: #FF3448;">Subscribe</button>
+								<!-- <button type="submit" class="btn btn-primary" data-dismiss="modal">Close</button> -->
+							  </form>
+						</div>
+						<div class="modal-footer">
+						</div>
+					  </div>
+					</div>
+				  </div>
 			</div>
 			<div class="col-md-6 text-center order-1 order-md-2">
 				<img class="img-fluid" src="images/mobile1.png" alt="screenshot">
@@ -164,56 +199,9 @@
 </section>
 <!--====  End of Services  ====-->
 
-<section>
-	<form action="" method="POST" id="registrationform">
-		<h1>Register</h1>
-		<div class="alert">Message Sent</div>
-		<fieldset>
-		  <!-- Section 1 -->
-		  <legend><span class="section">1</span>Your Basic Info</legend>
-		  <label class="" for="name">Name:</label>
-		  <input type="text" name="name" value="" id="name" required />
-	
-		  <label class="" for="email">Email:</label>
-		  <input type="email" name="email" value="" id="email" required />
-	
-		  <label for="password">password:</label>
-		  <input type="password" name="password" value="" id="password" required />
-		</fieldset>
-	
-		<fieldset>
-		  <!-- section 2 -->
-		  <legend><span class="section">2</span>Profile</legend>
-	
-		  <label class="" for="bio">Bio:</label>
-		  <textarea name="bio" id="bio" required></textarea>
-	
-		  <label for="job">Job Role:</label>
-		  <select name="job" id="job" required>
-			<optgroup label="Web">
-			  <option value="front_end_developer" id="frontend">Frontend Developer</option>
-			  <option value="back_end_developer" id="backend">Backend Developer</option>
-			  <option value="fullstack_developer" id="fullstack">Fullstack Developer</option>
-			</optgroup>
-			<optgroup label="Mobile">
-			  <option value="android" id="android">Android</option>
-			  <option value="ionic" id="ionic">Ionic</option>
-			  <option value="phonegap" id="phonegap">PhoneGap</option>
-			</optgroup>
-		  </select>
-		  <br /><br />
-		  <label>Interest:</label>
-	
-		  <select id="interest" required>
-			<option value="development">Development</option>
-			<option value="design">Design</option>
-			<option value="business">Business</option>
-		  </select>
-	
-	
-		  <button type="submit" sendMessage()>Register</button>
-	  </form>
-</section>
+
+
+
 
 <!--==================================
 =            Feature Grid            =
@@ -639,11 +627,11 @@
   
   <script src="js/script.js"></script>
 
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
   <script src="js/firebase.js"></script>
-
-
-
-
+  <!-- <script src="js/app.js"></script> -->
 
   
 </body>
