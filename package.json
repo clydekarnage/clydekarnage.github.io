@@ -1,12 +1,12 @@
 {
-  "name": "themefisher-theme-kit",
+  "name": "alba-app-landing-page",
   "version": "1.1.0",
-  "description": "Gulp environment for running HTML themes by themefisher",
+  "description": "Static landing page of alba app",
   "keywords": [
     "gulp",
     "frontend"
   ],
-  "author": "Themefisher",
+  "author": "clyde",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.24.5",
