@@ -239,12 +239,30 @@ a:hover {
   height: 160px;
 }
 
+.app-ios {
+  height: 60px;
+}
+
+.app-and {
+  height: 60px;
+}
+
 .bg-gray {
   background: #fafafa;
 }
 
 .bg-blue {
   background: #FF3448;
+}
+
+.dl-button {
+  width: 100%;
+  display: inline;
+}
+
+button.btn.btn-main-md.iphone {
+  margin-right: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .bg-1 {
@@ -391,6 +409,15 @@ textarea.form-control.main {
     text-align: center;
   }
 
+  button.btn.btn-main-md.iphone {
+    /* margin-right: 20px; */
+    margin-bottom: 20px;
+  }
+
+  .app-ios {
+    margin-bottom: 20px;
+  }
+
 }
 
 .right {
@@ -534,6 +561,9 @@ button:focus,
 @media (max-width: 1024px) {
   .main-logo {
     height: 155px;
+  }
+  button.btn.btn-main-md.iphone{
+    margin-bottom: 20px;
   }
 }
 
@@ -1149,6 +1179,13 @@ button:focus,
   .app-features .app-feature {
     margin-bottom: 30px;
   }
+}
+
+@media (max-width: 425px) {
+  button.btn.btn-main-md.iphone {
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
 }
 
 .app-features .app-explore {

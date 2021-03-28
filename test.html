@@ -1,6 +1,40 @@
 <head>
-    <meta http-equiv="refresh" content="0; URL=https://apps.apple.com/ae/app/dubizzle/id892172848" />
+  <script>
+    function getMobileOperatingSystem() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+          // Windows Phone must come first because its UA also contains "Android"
+        if (/windows phone/i.test(userAgent)) {
+            return "Windows Phone";
+        }
+    
+        if (/android/i.test(userAgent)) {
+            return "Android";
+        }
+    
+        // iOS detection from: http://stackoverflow.com/a/9039885/177710
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return "iOS";
+        }
+    
+        return "unknown";
+    }</script>
+    
+    <script>
+    function DetectAndServe(){
+        let os = getMobileOperatingSystem();
+        if (os == "Android") {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.talabat&referrer=adjust_reftag%3Dc2VDcRfodCSbL%26utm_source%3DCooperations%26utm_campaign%3Dother_campaigns_and_eat_ma_bh_display%26utm_content%3DFooter_download&utm_campaign=other_campaigns_web_eat_ma_bh_display&utm_medium=campaigns&utm_source=Footer_download"; 
+        } else if (os == "iOS") {
+            window.location.href = "https://apps.apple.com/us/app/talabat-%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-food-ordering/id451001072?utm_campaign=other_campaigns_web_eat_ma_bh_display&utm_source=Footer_download&utm_medium=campaigns";
+        } else if (os == "Windows Phone") {
+            window.location.href = "http://www.WindowsPhoneexample.com";
+        } else {
+            window.location.href = "http://www.NowherLandexample.com";
+        }
+    }
+    </script>
   </head>
   <body>
-    <p>If you are not redirected in five seconds, <a href="https://apps.apple.com/ae/app/dubizzle/id892172848">click here</a>.</p>
+    <!-- <p>If you are not redirected in five seconds, <a href="https://apps.apple.com/ae/app/dubizzle/id892172848">click here</a>.</p> -->
   </body>
