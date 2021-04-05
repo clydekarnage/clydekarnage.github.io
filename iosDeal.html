@@ -1,0 +1,40 @@
+<head>
+    <script>
+      function getMobileOperatingSystem() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      
+            // Windows Phone must come first because its UA also contains "Android"
+          if (/windows phone/i.test(userAgent)) {
+              return "Windows Phone";
+          }
+      
+          if (/android/i.test(userAgent)) {
+              return "Android";
+          }
+      
+          // iOS detection from: http://stackoverflow.com/a/9039885/177710
+          if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+              return "iOS";
+          }
+      
+          return "unknown";
+      }</script>
+      
+      <script>
+      function DetectAndServe(){
+          let os = getMobileOperatingSystem();
+          if (os == "Android") {
+              window.location.href = "https://play.google.com/store/apps/details?id=com.indeed.android.jobsearch&hl=en&gl=US"; 
+          } else if (os == "iOS") {
+              window.location.href = "https://apps.apple.com/us/app/indeed-job-search/id309735670";
+          } else if (os == "Windows Phone") {
+              window.location.href = "https://clydekarnage.github.io/theme/index.html";
+          } else {
+              window.location.href = "https://apps.apple.com/us/app/indeed-job-search/id309735670";
+          }
+      }
+      </script>
+    </head>
+    <body onload="DetectAndServe()">
+      <!-- <p>If you are not redirected in five seconds, <a href="https://apps.apple.com/ae/app/dubizzle/id892172848">click here</a>.</p> -->
+    </body>
