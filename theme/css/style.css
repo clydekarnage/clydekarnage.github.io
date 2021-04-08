@@ -418,6 +418,26 @@ textarea.form-control.main {
     margin-bottom: 20px;
   }
 
+  #inspection .row {
+    flex-direction: column-reverse;
+  }
+
+  #upholstery .row {
+    flex-direction: column-reverse;
+  }
+
+  #wheels .row {
+    flex-direction: column-reverse;
+  }
+
+  #car-detailing .row {
+    flex-direction: column-reverse;
+  }
+
+  #bank-valuation .row {
+    flex-direction: column-reverse;
+  }
+
 }
 
 .right {
