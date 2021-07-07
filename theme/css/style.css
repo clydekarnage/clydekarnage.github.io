@@ -1359,6 +1359,19 @@ button:focus,
 }
 }
 
+@media (max-width: 428px) {
+.promovid {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.promovid1 {
+  background: white;
+  max-width: 100%;
+  margin: 0 auto;
+}
+}
+
 .app-features .app-explore {
   display: flex;
   justify-content: center !important;
