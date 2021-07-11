@@ -1340,6 +1340,11 @@ button:focus,
     margin-left: 40%;
     margin-right: 40%;
   }
+
+  .nav-pills, .nav-tabs {
+    border: 0;
+    column-gap: 70px;
+  }
 }
 
 @media (max-width: 425px) {
