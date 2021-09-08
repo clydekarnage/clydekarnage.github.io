@@ -244,7 +244,8 @@ a:hover {
 }
 
 .app-ios {
-  height: 60px;
+  height: 100%;
+  margin-left: -10px;
 }
 
 .title h3{
