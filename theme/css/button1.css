@@ -86,7 +86,7 @@ button:hover::after {
   transform: translateX(67%);
 }
 button:hover .icon-container {
-  transform: translateX(125%);
+  transform: translateX(100%);
 }
 button:hover .icon-container .icon--left {
   transform: translateX(0);
