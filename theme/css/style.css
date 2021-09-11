@@ -83,6 +83,8 @@ html {
 body {
   font-family: "Visby CF", sans-serif;
   -webkit-font-smoothing: antialiased;
+  width: 100%;
+	height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1415,6 +1417,15 @@ button:focus,
   left: 50%;
   transform: translate(-50%, 6%);
 }
+.btn-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  background: var(--bg);
+}
+
 }
 
 .app-features .app-explore {
