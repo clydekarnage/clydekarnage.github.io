@@ -243,9 +243,10 @@ a:hover {
   height: 160px;
 }
 
-.app-ios {
-  height: 60px;
-}
+/* .app-ios {
+  height: 100%;
+  margin-left: -10px;
+} */
 
 .title h3{
   font-size: 25px !important;
@@ -383,8 +384,30 @@ footer p a:hover {
   background: #FF3448;
 }
 
-.dl-button {
+/* .dl-button {
   width: 100%;
+  display: inline;
+} */
+
+.dl-button img {
+  position: relative;
+  display: inline-block;
+}
+
+.dl-button .main_button {
+  position: absolute;
+  left: 0;
+  z-index: 99;
+}
+
+.dl-button .hover_button {
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 99;
+}
+
+.dl-button:hover .hover_button {
   display: inline;
 }
 
@@ -1362,6 +1385,8 @@ button:focus,
   max-width: 100%;
   margin: 0 auto;
 }
+
+
 }
 
 @media (max-width: 428px) {
@@ -1374,6 +1399,21 @@ button:focus,
   background: white;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.dl-button {
+  position: relative;
+}
+
+.main_button {
+  left: 50% !important;
+  transform: translate(-50%, 6%);
+}
+
+.dl-button:hover .hover_button {
+  display: inline;
+  left: 50%;
+  transform: translate(-50%, 6%);
 }
 }
 
